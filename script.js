@@ -116,3 +116,51 @@ for (let i = 1; i <= 5; i++) {
   }
 
 }
+let ladoA = 5, ladoB = 5, ladoC = 8;
+
+if (ladoA === ladoB && ladoB === ladoC) {
+  console.log("Equilátero");
+} else if (ladoA === ladoB || ladoA === ladoC || ladoB === ladoC) {
+  console.log("Isósceles");
+} else {
+  console.log("Escaleno");
+}
+let valorCompra = 350;
+let valorFinal;
+
+if (valorCompra > 500) {
+  valorFinal = valorCompra * 0.85;
+} else if (valorCompra >= 200) {
+  valorFinal = valorCompra * 0.90; 
+} else {
+  valorFinal = valorCompra; 
+}
+console.log(`Valor a pagar: R$ ${valorFinal.toFixed(2)}`);
+
+let numeroDaSorte = 2;
+
+for (let i = 1; i <= 100; i++) {
+  if (i === numeroDaSorte) {
+    console.log("Número encontrado!");
+    break;
+  }
+  console.log(i);
+}
+for (let i = 1; i <= 30; i++) {
+  if (i % 2 !== 0) {
+    console.log(i);
+  }
+}
+
+let somar = 0;
+
+for (let i = 1; i <= 50; i++) {
+  somar += i;
+}
+
+let quantidade = 50;
+let mediar = somar / quantidade;
+
+console.log(`Soma total: ${somar}`); 
+console.log(`Quantidade de números: ${quantidade}`); 
+console.log(`Média aritmética: ${mediar}`); 
